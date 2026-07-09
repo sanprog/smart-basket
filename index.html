@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Умная корзина — оптимизатор семейных закупок</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Умная корзина</h1>
+    <p>Составьте список покупок и получите оптимальное распределение по точкам с расчётом экономии</p>
+  </header>
+
+  <div class="layout">
+    <div class="panel">
+      <h2 class="panel-title">Справочник товаров</h2>
+      <div id="catalog"></div>
+    </div>
+
+    <div class="panel">
+      <h2 class="panel-title">Результат</h2>
+      <div class="controls">
+        <label for="threshold">
+          Порог целесообразности (₸)
+          <input type="number" id="threshold" min="0" step="100">
+        </label>
+        <button id="reset-btn">Сбросить список</button>
+      </div>
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

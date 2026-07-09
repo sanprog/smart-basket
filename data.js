@@ -1,0 +1,55 @@
+// Справочник товаров и точек продаж (тестовые данные, июль 2026, Алматы)
+const APP_DATA = {
+  stores: [
+    { id: "hyper", name: "Гипермаркет (Magnum)" },
+    { id: "bazaar", name: "Базар (Зелёный / Алтын Орда)" },
+    { id: "local", name: "Магазин у дома" }
+  ],
+  products: [
+    // Продукты питания
+    { id: "beef", name: "Говядина (мякоть)", category: "Продукты", unit: "кг",
+      prices: { hyper: 4800, bazaar: 4300, local: 5200 } },
+    { id: "chicken", name: "Курица (грудка)", category: "Продукты", unit: "кг",
+      prices: { hyper: 2200, bazaar: 2000, local: 2500 } },
+    { id: "potato", name: "Картофель", category: "Продукты", unit: "кг",
+      prices: { hyper: 280, bazaar: 220, local: 320 } },
+    { id: "carrot", name: "Морковь", category: "Продукты", unit: "кг",
+      prices: { hyper: 250, bazaar: 180, local: 300 } },
+    { id: "onion", name: "Лук репчатый", category: "Продукты", unit: "кг",
+      prices: { hyper: 220, bazaar: 160, local: 260 } },
+    { id: "milk", name: "Молоко 2.5%", category: "Продукты", unit: "л",
+      prices: { hyper: 650, bazaar: 680, local: 720 } },
+    { id: "eggs", name: "Яйца (уп. 10 шт)", category: "Продукты", unit: "шт",
+      prices: { hyper: 850, bazaar: 780, local: 950 } },
+    { id: "rice", name: "Рис", category: "Продукты", unit: "кг",
+      prices: { hyper: 700, bazaar: 650, local: 800 } },
+    { id: "buckwheat", name: "Гречка", category: "Продукты", unit: "кг",
+      prices: { hyper: 750, bazaar: 700, local: 850 } },
+    { id: "bread", name: "Хлеб (батон)", category: "Продукты", unit: "шт",
+      prices: { hyper: 220, bazaar: 200, local: 250 } },
+
+    // Бытовая химия
+    { id: "detergent", name: "Стиральный порошок", category: "Бытовая химия", unit: "кг",
+      prices: { hyper: 1900, bazaar: 2100, local: 2400 } },
+    { id: "dishsoap", name: "Средство для посуды", category: "Бытовая химия", unit: "л",
+      prices: { hyper: 1200, bazaar: 1400, local: 1500 } },
+    { id: "toiletpaper", name: "Туалетная бумага (уп. 8 рул.)", category: "Бытовая химия", unit: "шт",
+      prices: { hyper: 2200, bazaar: 2500, local: 2600 } },
+    { id: "soap", name: "Мыло хозяйственное", category: "Бытовая химия", unit: "шт",
+      prices: { hyper: 350, bazaar: 300, local: 400 } },
+    { id: "bleach", name: "Отбеливатель", category: "Бытовая химия", unit: "л",
+      prices: { hyper: 900, bazaar: 1000, local: 1100 } },
+
+    // Товары для ребёнка
+    { id: "diapers", name: "Подгузники (уп. 40 шт)", category: "Товары для ребёнка", unit: "шт",
+      prices: { hyper: 9500, bazaar: 10500, local: 11000 } },
+    { id: "babyfood", name: "Детское питание (баночка)", category: "Товары для ребёнка", unit: "шт",
+      prices: { hyper: 650, bazaar: 700, local: 750 } },
+    { id: "wipes", name: "Детские влажные салфетки", category: "Товары для ребёнка", unit: "шт",
+      prices: { hyper: 1200, bazaar: 1300, local: 1400 } },
+    { id: "formula", name: "Молочная смесь (банка)", category: "Товары для ребёнка", unit: "шт",
+      prices: { hyper: 8500, bazaar: 9000, local: 9500 } },
+    { id: "babyshampoo", name: "Детский шампунь", category: "Товары для ребёнка", unit: "шт",
+      prices: { hyper: 2800, bazaar: 3000, local: 3200 } }
+  ]
+};
